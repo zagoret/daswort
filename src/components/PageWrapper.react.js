@@ -37,8 +37,9 @@ type navItem = {|
 const navBarItems: Array<navItem> = [
   {
     value: "Notes",
-    to: "/",
+    to: "/notes",
     icon: "music",
+    initialValue:false,
     LinkComponent: withRouter(NavLink)
   },
   {

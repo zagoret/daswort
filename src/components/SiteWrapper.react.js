@@ -1,10 +1,8 @@
 // @flow
 
 import * as React from "react";
-import {NavLink, withRouter} from "react-router-dom";
 
 import {Page, Site} from "tabler-react";
-// import type { Props as SiteHeaderProps } from "./SiteHeader.react";
 import type {Props as SiteNavProps} from "./SiteNav.react";
 import type {Props as SiteFooterProps} from "./SiteFooter.react";
 

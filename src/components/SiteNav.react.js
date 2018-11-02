@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import cn from "classnames";
-import { Notification, Grid, Nav, Form } from "tabler-react";
+import {Grid, Nav, Form } from "tabler-react";
 
 type subNavItem = {|
   +value: string,
@@ -21,18 +21,6 @@ type navItem = {|
 |};
 
 type navItems = Array<navItem>;
-const notificationsObjects = [
-  {
-    avatarURL: "demo/faces/male/41.jpg",
-    message: (
-      <React.Fragment>
-        <strong>Nathan</strong> pushed new commit: Fix page load performance
-        issue.
-      </React.Fragment>
-    ),
-    time: "10 minutes ago",
-  }
-];
 
 export type Props = {|
   +children?: React.Node,
@@ -61,8 +49,7 @@ const SiteNav = ({
                    withSearchForm = true,
                    rightColumnComponent,
                    collapse = true,
-                   routerContextComponentType,
-                   onMenuToggleClick
+                   routerContextComponentType
                  }: Props): React.Node => {
   const classes = cn("header d-lg-flex p-0");
   return (
@@ -94,7 +81,6 @@ const SiteNav = ({
                   position="append"
                 />
               </Form.Group>
-              {/*<Notification.Tray notificationsObjects={notificationsObjects} />*/}
             </Grid.Col>
           </Grid.Row>
         )}
