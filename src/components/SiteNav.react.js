@@ -1,0 +1,108 @@
+// @flow
+
+import * as React from "react";
+import cn from "classnames";
+import { Notification, Grid, Nav, Form } from "tabler-react";
+
+type subNavItem = {|
+  +value: string,
+  +to?: string,
+  +icon?: string,
+  +LinkComponent?: React.ElementType,
+|};
+
+type navItem = {|
+  +value: string,
+  +to?: string,
+  +icon?: string,
+  +active?: boolean,
+  +LinkComponent?: React.ElementType,
+  +subItems?: Array<subNavItem>,
+|};
+
+type navItems = Array<navItem>;
+const notificationsObjects = [
+  {
+    avatarURL: "demo/faces/male/41.jpg",
+    message: (
+      <React.Fragment>
+        <strong>Nathan</strong> pushed new commit: Fix page load performance
+        issue.
+      </React.Fragment>
+    ),
+    time: "10 minutes ago",
+  }
+];
+
+export type Props = {|
+  +children?: React.Node,
+  +items?: React.ChildrenArray<React.Element<typeof Nav.Item>>,
+  +itemsObjects?: navItems,
+  /**
+   * Display a search form to the right of the nav items
+   */
+  +withSearchForm?: boolean,
+  /**
+   * Provide your own component to replace the search form
+   */
+  +rightColumnComponent?: React.Node,
+  /**
+   * Toggle the collapsed state of the nav
+   */
+  +collapse?: boolean,
+  +routerContextComponentType?: React.ElementType,
+|};
+
+
+const SiteNav = ({
+                   children,
+                   items,
+                   itemsObjects,
+                   withSearchForm = true,
+                   rightColumnComponent,
+                   collapse = true,
+                   routerContextComponentType,
+                   onMenuToggleClick
+                 }: Props): React.Node => {
+  const classes = cn("header d-lg-flex p-0");
+  return (
+    <div className={classes}>
+      <div className="container-fluid pt-2">
+        {children || (
+          <Grid.Row className="align-items-center">
+            <Grid.Col sm={1} className="d-none d-sm-block">
+              <a className="header-brand" href="#">
+                <img src="brand.svg" className="header-brand-img ml-3" alt="Brand loc"
+                  style={{height:'2.5em'}}
+                />
+              </a>
+            </Grid.Col>
+            <Grid.Col>
+              <Nav
+                tabbed
+                className="border-0 flex-lg-row flex-md-row"
+                items={items}
+                itemsObjects={itemsObjects}
+                routerContextComponentType={routerContextComponentType}
+              />
+            </Grid.Col>
+            <Grid.Col className="col-lg-3 d-inline-flex">
+              <Form.Group className="m-0">
+                <Form.Input
+                  icon="search"
+                  placeholder="Search for..."
+                  position="append"
+                />
+              </Form.Group>
+              {/*<Notification.Tray notificationsObjects={notificationsObjects} />*/}
+            </Grid.Col>
+          </Grid.Row>
+        )}
+      </div>
+    </div>
+  );
+};
+
+SiteNav.displayName = "Site.Nav";
+
+export default SiteNav;
