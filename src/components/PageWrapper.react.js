@@ -64,14 +64,9 @@ class PageWrapper extends React.Component<Props, void> {
           copyright: (
             <React.Fragment>
               Copyright © 2018
-              <a href="."> Tabler-react</a>. Theme by
-              <a
-                href="https://codecalm.net"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              {" "}
+              <a href=".">Das Wort</a>
                 {" "}
-              </a>{" "}
               All rights reserved.
             </React.Fragment>
           ),
