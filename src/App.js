@@ -14,7 +14,7 @@ function App(props: Props): React.Node {
     <React.StrictMode>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/notes" component={NotesPage} />
+          <Route exact path="/" component={NotesPage} />
           <Route exact path="/photos" component={PhotosPage} />
         </Switch>
       </Router>
