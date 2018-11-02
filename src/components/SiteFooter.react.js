@@ -28,7 +28,7 @@ export type Props = {|
 const SiteFooter = ({ links, note, copyright, nav }: Props): React.Node => (
   <React.Fragment>
     {(links || note) && (
-      <div className="footer">
+      <div className="footer fixed-bottom">
         <Container>
           <Grid.Row>
             <Grid.Col lg={8}>
@@ -41,7 +41,7 @@ const SiteFooter = ({ links, note, copyright, nav }: Props): React.Node => (
       </div>
     )}
     {(nav || copyright) && (
-      <footer className="footer">
+      <footer className="footer fixed-bottom">
         <Container>
           <Grid.Row className="align-items-center flex-row-reverse">
             <Grid.Col auto={true} className="ml-auto">
