@@ -14,7 +14,7 @@ export default class FolderComponent extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://daswort-api.herokuapp.com//files")
+    fetch("https://daswort-api.herokuapp.com/files")
       .then(res => res.json())
       .then(
         (result) => {
