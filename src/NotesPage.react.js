@@ -4,17 +4,22 @@ import React from "react";
 
 import PageWrapper from "./components/PageWrapper.react";
 
-import FolderComponent from "./components/Folder.react";
+import FileComponent from "./components/File.react";
 import {Page}from "tabler-react";
 
-function NotesPage() {
+type Props = {||};
+
+const NotesPage = (props: Props) => {
+  console.log("Params:" + JSON.stringify(props.match.params));
+  const location = {pathname:`/notes/${props.match.params.fileId}`};
+  console.log(location);
   return(
         <PageWrapper>
           <Page.Content>
-            <FolderComponent/>
+            <FileComponent key={props.match.params.fileId} fileId={props.match.params.fileId}/>
           </Page.Content>
         </PageWrapper>
   );
-}
+};
 
 export default NotesPage;

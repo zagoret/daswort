@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {Grid, StampCard} from "tabler-react";
 
-import {Grid, Icon, PricingCard} from "tabler-react";
+type Props = {|
+  +fileId?: String,
+|};
 
-export default class FolderComponent extends React.Component {
+export default class FileComponent extends React.Component {
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
     this.state = {
       error: null,
@@ -14,7 +18,9 @@ export default class FolderComponent extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://daswort-api.herokuapp.com/files")
+    console.log("componentDidMount");
+    // fetch(`https://daswort-api.herokuapp.com/files/${this.props.fileId}`)
+    fetch(`http://localhost:8080/files/${this.props.fileId}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -39,15 +45,18 @@ export default class FolderComponent extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
+
         <Grid.Row cards={true}>
           {items.map(item => (
-            <Grid.Col width={6} sm={4} lg={2}>
-              <PricingCard>
-                <PricingCard.Category>{item.name}</PricingCard.Category>
-                <PricingCard.Price><Icon name="folder"/></PricingCard.Price>
-                <PricingCard.Button> {"Orchestra"} </PricingCard.Button>
-              </PricingCard>
-            </Grid.Col>
+          <Grid.Col sm={6} lg={3} key={item.id}>
+            <StampCard
+              color="blue"
+              icon="dollar-sign"
+              header={
+                <Link to={`/notes/${item.driveId}`} replace><small>{item.name}</small></Link>
+              }
+            />
+          </Grid.Col>
           ))}
         </Grid.Row>
       );

@@ -12,10 +12,11 @@ function App(props: Props): React.Node {
 
   return (
     <React.StrictMode>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router history={Router.history} basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" render={() => (<Redirect to="/notes" />)} />
-          <Route exact path="/notes" component={NotesPage} />
+          <Route exact path="/notes/" component={NotesPage} />
+          <Route exact path="/notes/:fileId" component={NotesPage} />
           <Route exact path="/photos" component={PhotosPage} />
         </Switch>
       </Router>
