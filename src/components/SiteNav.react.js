@@ -60,7 +60,7 @@ const SiteNav = ({
           <Grid.Row className="align-items-center">
             <Grid.Col sm={1} className="d-none d-sm-block">
               <a className="header-brand" href="#">
-                <img src="/brand.svg" className="header-brand-img ml-3" alt="Brand loc"
+                <img src="https://i.postimg.cc/k42gWV8p/brand.png" className="header-brand-img ml-3" alt="Brand loc"
                   style={{height:'2.5em'}}
                 />
               </a>
