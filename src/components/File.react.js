@@ -20,8 +20,8 @@ class FileComponent extends React.Component {
   componentDidMount() {
   const fileId = this.props.match.params.fileId || "";
   this.props.history.push(`/notes/${fileId}`);
-    // fetch(`https://daswort-api.herokuapp.com/files/${this.props.fileId}`)
-    fetch(`http://localhost:8080/files/${fileId}`)
+    fetch(`https://daswort-api.herokuapp.com/files/${fileId}`)
+    // fetch(`http://localhost:8080/files/${fileId}`)
       .then(res => res.json())
       .then(
         (result) => {
