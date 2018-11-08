@@ -16,7 +16,7 @@ const NotesPage = (props: Props) => {
   return(
         <PageWrapper>
           <Page.Content>
-            <FileComponent key={props.match.params.fileId} fileId={props.match.params.fileId}/>
+            <FileComponent key={props.match.params.fileId} />
           </Page.Content>
         </PageWrapper>
   );

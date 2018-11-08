@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import {Grid, StampCard} from "tabler-react";
 
 type Props = {|
   +fileId?: String,
 |};
 
-export default class FileComponent extends React.Component {
+class FileComponent extends React.Component {
 
   constructor(props: Props) {
     super(props);
@@ -18,9 +18,10 @@ export default class FileComponent extends React.Component {
   }
 
   componentDidMount() {
-    console.log("componentDidMount");
+  const fileId = this.props.match.params.fileId || "";
+  this.props.history.push(`/notes/${fileId}`);
     // fetch(`https://daswort-api.herokuapp.com/files/${this.props.fileId}`)
-    fetch(`http://localhost:8080/files/${this.props.fileId}`)
+    fetch(`http://localhost:8080/files/${fileId}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -50,8 +51,8 @@ export default class FileComponent extends React.Component {
           {items.map(item => (
           <Grid.Col sm={6} lg={3} key={item.id}>
             <StampCard
-              color="blue"
-              icon="dollar-sign"
+              // color="blue"
+              icon="folder"
               header={
                 <Link to={`/notes/${item.driveId}`} replace><small>{item.name}</small></Link>
               }
@@ -63,3 +64,4 @@ export default class FileComponent extends React.Component {
     }
   }
 }
+export default withRouter(FileComponent);

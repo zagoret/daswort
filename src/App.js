@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HashRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 import NotesPage from "./NotesPage.react";
 import PhotosPage from "./PhotosPage.react";
@@ -12,7 +12,7 @@ function App(props: Props): React.Node {
 
   return (
     <React.StrictMode>
-      <Router history={Router.history} basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" render={() => (<Redirect to="/notes" />)} />
           <Route exact path="/notes/" component={NotesPage} />

@@ -3,6 +3,7 @@
 import * as React from "react";
 import cn from "classnames";
 import {Grid, Nav, Form } from "tabler-react";
+import Search from './Search.react';
 
 type subNavItem = {|
   +value: string,
@@ -59,7 +60,7 @@ const SiteNav = ({
           <Grid.Row className="align-items-center">
             <Grid.Col sm={1} className="d-none d-sm-block">
               <a className="header-brand" href="#">
-                <img src="brand.svg" className="header-brand-img ml-3" alt="Brand loc"
+                <img src="/brand.svg" className="header-brand-img ml-3" alt="Brand loc"
                   style={{height:'2.5em'}}
                 />
               </a>
@@ -75,11 +76,12 @@ const SiteNav = ({
             </Grid.Col>
             <Grid.Col className="col-lg-3 d-inline-flex">
               <Form.Group className="m-0">
-                <Form.Input
-                  icon="search"
-                  placeholder="Search for..."
-                  position="append"
-                />
+                {/*<Form.Input*/}
+                  {/*icon="search"*/}
+                  {/*placeholder="Search for..."*/}
+                  {/*position="append"*/}
+                {/*/>*/}
+                <Search/>
               </Form.Group>
             </Grid.Col>
           </Grid.Row>
