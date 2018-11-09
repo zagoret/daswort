@@ -74,7 +74,7 @@ const SiteNav = ({
                 routerContextComponentType={routerContextComponentType}
               />
             </Grid.Col>
-            <Grid.Col className="col-lg-3 d-inline-flex">
+            <Grid.Col className="col-lg-4 d-inline-flex">
               <Form.Group className="m-0">
                 {/*<Form.Input*/}
                   {/*icon="search"*/}

@@ -120,7 +120,7 @@ function getSuggestionValue(suggestion) {
 
 function renderSuggestion(suggestion) {
   return (
-    <span>{suggestion.name}</span>
+    <span className="react-autosuggest__item">{suggestion.name}</span>
   );
 }
 
@@ -152,21 +152,13 @@ class SearchComponent extends React.Component {
   };
 
   onSuggestionsFetchRequested = ({ value }) => {
-    // fetch(`http://localhost:8080/search/${value}`)
-    fetch(`https://daswort-api.herokuapp.com/search/${value}`)
+    fetch(`http://localhost:8080/search/${value}`)
+    // fetch(`https://daswort-api.herokuapp.com/search/${value}`)
       .then(res => res.json())
       .then(
         (result) => {
-          console.log("Result: "+ result);
+          console.log("Result: "+ JSON.stringify(result));
           this.setState({
-            // suggestions: [{
-            //   title: "Asa-i bine",
-            //   category: [
-            //
-            //       'Elm'
-            //
-            //   ]
-            // }]
             suggestions: result
           });
 

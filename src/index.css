@@ -19,7 +19,7 @@ code {
 }
 
 .react-autosuggest__input {
-  width: 290px;
+  width: 400px;
   height: 40px;
   padding: 10px 20px;
   font-family: Helvetica, sans-serif;
@@ -62,7 +62,7 @@ code {
   display: block;
   position: absolute;
   top: 40px;
-  width: 290px;
+  width: 400px;
   border: 1px solid #aaaaaa4a;
   background-color: #fff;
   font-family: Helvetica, sans-serif;
@@ -100,4 +100,8 @@ code {
   padding: 10px 0 0 10px;
   font-size: 12px;
   color: #777;
+}
+
+span.react-autosuggest__item{
+  font-size: 12px;
 }
