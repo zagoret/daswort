@@ -20,8 +20,8 @@ class FileComponent extends React.Component {
   componentDidMount() {
   const fileId = this.props.match.params.fileId || "";
   this.props.history.push(`/notes/${fileId}`);
-    fetch(`https://daswort-api.herokuapp.com/files/${fileId}`)
-    // fetch(`http://localhost:8080/files/${fileId}`)
+    // fetch(`https://daswort-api.herokuapp.com/files/${fileId}`)
+    fetch(`http://localhost:8080/files/${fileId}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -38,12 +38,14 @@ class FileComponent extends React.Component {
         })
   }
 
+
   render() {
     const {error, isLoaded, items} = this.state;
+
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div>Загрузка...</div>;
     } else {
       return (
 
@@ -51,10 +53,15 @@ class FileComponent extends React.Component {
           {items.map(item => (
           <Grid.Col sm={6} lg={3} key={item.id}>
             <StampCard
-              // color="blue"
-              icon="folder"
+              color={item.webContentLink ? 'primary' : ''}
+              icon={item.webContentLink ? 'file' : 'folder'}
               header={
-                <Link to={`/notes/${item.driveId}`} replace><small>{item.name}</small></Link>
+                (item.webContentLink && (
+                    <a href={item.webContentLink}><small>{item.name}</small></a>
+                ) ||
+                  <Link to={`/notes/${item.driveId}`} replace><small>{item.name}</small></Link>
+                )
+
               }
             />
           </Grid.Col>
