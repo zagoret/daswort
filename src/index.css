@@ -105,3 +105,15 @@ code {
 span.react-autosuggest__item{
   font-size: 12px;
 }
+
+@media (max-width: 576px) {
+  .react-autosuggest__input {
+    width: 350px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .react-autosuggest__suggestions-container--open{
+    width: 350px !important;
+  }
+}
