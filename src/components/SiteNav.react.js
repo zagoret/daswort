@@ -65,7 +65,7 @@ const SiteNav = ({
                 />
               </a>
             </Grid.Col>
-            <Grid.Col ignoreCol={true} lg={2}  md={3} sm={3} xs={6}>
+            <Grid.Col ignoreCol={true} lg={2}  md={2} sm={3} xs={6}>
               <Nav
                 tabbed
                 className="border-0 d-flex"
@@ -74,7 +74,7 @@ const SiteNav = ({
                 routerContextComponentType={routerContextComponentType}
               />
             </Grid.Col>
-            <Grid.Col ignoreCol={true} lg={7} md={7} sm={7} xs={6}>
+            <Grid.Col ignoreCol={true} lg={7} md={8} sm={8} xs={6}>
               <Form.Group className="w-100 m-0 pt-2 pb-2">
                 <Search/>
               </Form.Group>
