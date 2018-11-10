@@ -74,12 +74,12 @@ const SiteNav = ({
                 routerContextComponentType={routerContextComponentType}
               />
             </Grid.Col>
-            <Grid.Col ignoreCol={true} lg={6} md={7} sm={7} xs={6}>
+            <Grid.Col ignoreCol={true} lg={7} md={7} sm={7} xs={6}>
               <Form.Group className="w-100 m-0 pt-2 pb-2">
                 <Search/>
               </Form.Group>
             </Grid.Col>
-            <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block">
+            <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block offset-lg-1">
               <Notification.Tray
                 unread={true}
                 notificationsObjects={[
