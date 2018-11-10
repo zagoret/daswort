@@ -125,8 +125,17 @@ function renderSuggestion(suggestion) {
 }
 
 function renderSectionTitle(section) {
+  console.log("Section"+ JSON.stringify(section));
+  const pathItems = section.value.split("/").map((item) =>
+    <li className="breadcrumb-item">{item}</li>
+  );
   return (
-    <strong>{section.value}</strong>
+    <nav aria-label="breadcrumb" className="pr-2">
+      <ol className="breadcrumb">
+        {pathItems}
+      </ol>
+    </nav>
+
   );
 }
 

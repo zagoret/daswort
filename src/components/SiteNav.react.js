@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import cn from "classnames";
-import {Grid, Nav, Form } from "tabler-react";
+import {Grid, Nav, Form, Notification } from "tabler-react";
 import Search from './Search.react';
 
 type subNavItem = {|
@@ -58,31 +58,58 @@ const SiteNav = ({
       <div className="container-fluid pt-2">
         {children || (
           <Grid.Row className="align-items-center">
-            <Grid.Col sm={1} className="d-none d-sm-block">
+            <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block">
               <a className="header-brand" href="#">
-                <img src="https://i.postimg.cc/k42gWV8p/brand.png" className="header-brand-img ml-3" alt="Brand loc"
+                <img src="https://daswort-api.herokuapp.com/img/brand/brand.svg" className="header-brand-img ml-3" alt="Brand loc"
                   style={{height:'2.5em'}}
                 />
               </a>
             </Grid.Col>
-            <Grid.Col>
+            <Grid.Col ignoreCol={true} lg={2}  md={3} sm={3} xs={6}>
               <Nav
                 tabbed
-                className="border-0 flex-lg-row flex-md-row"
+                className="border-0 d-flex"
                 items={items}
                 itemsObjects={itemsObjects}
                 routerContextComponentType={routerContextComponentType}
               />
             </Grid.Col>
-            <Grid.Col className="col-lg-4 d-inline-flex">
-              <Form.Group className="m-0">
-                {/*<Form.Input*/}
-                  {/*icon="search"*/}
-                  {/*placeholder="Search for..."*/}
-                  {/*position="append"*/}
-                {/*/>*/}
+            <Grid.Col ignoreCol={true} lg={6} md={7} sm={7} xs={6}>
+              <Form.Group className="w-100 m-0 pt-2 pb-2">
                 <Search/>
               </Form.Group>
+            </Grid.Col>
+            <Grid.Col ignoreCol={true} width={1} className="d-flex align-content-start">
+              <Notification.Tray
+                unread={true}
+                notificationsObjects={[
+                  {
+                    message: (
+                      <React.Fragment>
+                        <strong>Nathan</strong> pushed new commit: Fix page load performance
+                        issue.
+                      </React.Fragment>
+                    ),
+                    time: "10 minutes ago",
+                  },
+                  {
+                    message: (
+                      <React.Fragment>
+                        <strong>Alice</strong> started new task: Tabler UI design.
+                      </React.Fragment>
+                    ),
+                    time: "1 hour ago",
+                  },
+                  {
+                    message: (
+                      <React.Fragment>
+                        <strong>Rose</strong> deployed new version of NodeJS REST Api // V3
+                      </React.Fragment>
+                    ),
+                    time: "2 hours ago",
+                  },
+                ]}
+              />
             </Grid.Col>
           </Grid.Row>
         )}
