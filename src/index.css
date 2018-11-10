@@ -96,6 +96,7 @@ span.react-autosuggest__item{
 
 /* Framework changes*/
 .nav-unread{
-  top: -0.30em !important;
-  right: .3em !important;
+  position: relative !important;
+  top: -0.40em !important;
+  right: -.2em !important;
 }

@@ -61,7 +61,7 @@ const SiteNav = ({
             <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block">
               <a className="header-brand" href="#">
                 <img src="https://daswort-api.herokuapp.com/img/brand/brand.svg" className="header-brand-img ml-3" alt="Brand loc"
-                  style={{height:'2.5em'}}
+                  // style={{height:'2.5em'}}
                 />
               </a>
             </Grid.Col>
@@ -79,35 +79,26 @@ const SiteNav = ({
                 <Search/>
               </Form.Group>
             </Grid.Col>
-            <Grid.Col ignoreCol={true} width={1} className="d-flex align-content-start">
+            <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block">
               <Notification.Tray
                 unread={true}
                 notificationsObjects={[
                   {
                     message: (
                       <React.Fragment>
-                        <strong>Nathan</strong> pushed new commit: Fix page load performance
-                        issue.
+                        Новые фотографии в альбоме "Рождество"
                       </React.Fragment>
                     ),
-                    time: "10 minutes ago",
+                    time: "2 часа назад",
                   },
                   {
                     message: (
                       <React.Fragment>
-                        <strong>Alice</strong> started new task: Tabler UI design.
+                        Ноты для фортепиано
                       </React.Fragment>
                     ),
-                    time: "1 hour ago",
-                  },
-                  {
-                    message: (
-                      <React.Fragment>
-                        <strong>Rose</strong> deployed new version of NodeJS REST Api // V3
-                      </React.Fragment>
-                    ),
-                    time: "2 hours ago",
-                  },
+                    time: "3 дня назад",
+                  }
                 ]}
               />
             </Grid.Col>
