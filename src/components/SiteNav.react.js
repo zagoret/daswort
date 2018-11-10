@@ -61,7 +61,7 @@ const SiteNav = ({
             <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block">
               <a className="header-brand" href="#">
                 <img src="https://daswort-api.herokuapp.com/img/brand/brand.svg" className="header-brand-img ml-3" alt="Brand loc"
-                  // style={{height:'2.5em'}}
+                  style={{height:'2.3em'}}
                 />
               </a>
             </Grid.Col>
