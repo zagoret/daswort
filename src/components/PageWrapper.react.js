@@ -1,16 +1,9 @@
 // @flow
 
 import * as React from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 
-import {
-  Site,
-  Nav,
-  Grid,
-  List,
-  Button,
-  RouterContextProvider,
-} from "tabler-react";
+import {Grid, RouterContextProvider,} from "tabler-react";
 
 import SiteWrapper from "./SiteWrapper.react";
 
@@ -39,7 +32,7 @@ const navBarItems: Array<navItem> = [
     value: "Ноты",
     to: "/notes",
     icon: "music",
-    initialValue:false,
+    initialValue: false,
     LinkComponent: withRouter(NavLink)
   },
   {
@@ -52,13 +45,13 @@ const navBarItems: Array<navItem> = [
 
 class PageWrapper extends React.Component<Props, void> {
   handleCollapseMobileMenu = (): void => {
-    this.setState(s => ({ collapseMobileMenu: !s.collapseMobileMenu }));
+    this.setState(s => ({collapseMobileMenu: !s.collapseMobileMenu}));
   };
 
   render(): React.Node {
     return (
       <SiteWrapper
-        navProps={{ itemsObjects: navBarItems, onMenuToggleClick:  this.handleCollapseMobileMenu}}
+        navProps={{itemsObjects: navBarItems, onMenuToggleClick: this.handleCollapseMobileMenu}}
         routerContextComponentType={withRouter(RouterContextProvider)}
         footerProps={{
           copyright: (
@@ -66,7 +59,7 @@ class PageWrapper extends React.Component<Props, void> {
               Copyright © 2018
               {" "}
               <a href=".">Das Wort</a>
-                {" "}
+              {" "}
               All rights reserved.
             </React.Fragment>
           ),

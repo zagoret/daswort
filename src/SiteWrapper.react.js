@@ -1,16 +1,9 @@
 // @flow
 
 import * as React from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 
-import {
-  Site,
-  Nav,
-  Grid,
-  List,
-  Button,
-  RouterContextProvider,
-} from "tabler-react";
+import {Button, Grid, List, Nav, RouterContextProvider, Site,} from "tabler-react";
 
 type Props = {|
   +children: React.Node,
@@ -33,7 +26,7 @@ type navItem = {|
 |};
 
 const navBarItems: Array<navItem> = [
-  { value: "Home", to: "/", icon: "home", LinkComponent: withRouter(NavLink) },
+  {value: "Home", to: "/", icon: "home", LinkComponent: withRouter(NavLink)},
   {
     value: "Forms",
     to: "/form-elements",
@@ -60,13 +53,13 @@ const accountDropdownProps = {
   name: "Jane Pearson",
   description: "Administrator",
   options: [
-    { icon: "user", value: "Profile" },
-    { icon: "settings", value: "Settings" },
-    { icon: "mail", value: "Inbox", badge: "6" },
-    { icon: "send", value: "Message" },
-    { isDivider: true },
-    { icon: "help-circle", value: "Need help?" },
-    { icon: "log-out", value: "Sign out" },
+    {icon: "user", value: "Profile"},
+    {icon: "settings", value: "Settings"},
+    {icon: "mail", value: "Inbox", badge: "6"},
+    {icon: "send", value: "Message"},
+    {isDivider: true},
+    {icon: "help-circle", value: "Need help?"},
+    {icon: "log-out", value: "Sign out"},
   ],
 };
 
@@ -92,10 +85,10 @@ class SiteWrapper extends React.Component<Props, void> {
               </Button>
             </Nav.Item>
           ),
-          notificationsTray: { notificationsObjects },
+          notificationsTray: {notificationsObjects},
           accountDropdown: accountDropdownProps,
         }}
-        navProps={{ itemsObjects: navBarItems }}
+        navProps={{itemsObjects: navBarItems}}
         routerContextComponentType={withRouter(RouterContextProvider)}
         footerProps={{
           links: [

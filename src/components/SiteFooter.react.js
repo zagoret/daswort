@@ -1,7 +1,7 @@
 // @flow
 
 import * as React from "react";
-import { Container, Grid, List } from "tabler-react";
+import {Container, Grid} from "tabler-react";
 
 export type Props = {|
   /**
@@ -25,7 +25,7 @@ export type Props = {|
 /**
  * The footer of your website
  */
-const SiteFooter = ({ links, note, copyright, nav }: Props): React.Node => (
+const SiteFooter = ({links, note, copyright, nav}: Props): React.Node => (
   <React.Fragment>
     {(links || note) && (
       <div className="footer fixed-bottom">

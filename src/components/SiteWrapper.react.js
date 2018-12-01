@@ -4,9 +4,8 @@ import * as React from "react";
 
 import {Page, Site} from "tabler-react";
 import type {Props as SiteNavProps} from "./SiteNav.react";
-import type {Props as SiteFooterProps} from "./SiteFooter.react";
-
 import SiteNav from "./SiteNav.react";
+import type {Props as SiteFooterProps} from "./SiteFooter.react";
 import SiteFooter from "./SiteFooter.react";
 
 type Props = {|

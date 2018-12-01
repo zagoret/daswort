@@ -86,6 +86,7 @@ const languages = [
     ]
   }
 ];
+
 // https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions#Using_Special_Characters
 function escapeRegexCharacters(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -101,7 +102,7 @@ function getSuggestions(value) {
 
   const regex = new RegExp('^' + escapedValue, 'i');
 
-  const sss =  languages
+  const sss = languages
     .map(section => {
       return {
         title: section.title,
@@ -125,7 +126,7 @@ function renderSuggestion(suggestion) {
 }
 
 function renderSectionTitle(section) {
-  console.log("Section"+ JSON.stringify(section));
+  console.log("Section" + JSON.stringify(section));
   const pathItems = section.value.split("/").map((item) =>
     <li className="breadcrumb-item">{item}</li>
   );
@@ -154,25 +155,26 @@ class SearchComponent extends React.Component {
     };
   }
 
-  onChange = (event, { newValue, method }) => {
+  onChange = (event, {newValue, method}) => {
     this.setState({
       value: newValue
     });
   };
 
-  onSuggestionsFetchRequested = ({ value }) => {
-    // fetch(`http://localhost:8080/search/${value}`)
-    fetch(`https://daswort-api.herokuapp.com/search/${value}`)
+  onSuggestionsFetchRequested = ({value}) => {
+    fetch(`http://localhost:8080/search/${value}`)
+    // fetch(`https://daswort-api.herokuapp.com/search/${value}`)
       .then(res => res.json())
       .then(
         (result) => {
-          console.log("Result: "+ JSON.stringify(result));
+          console.log("Result: " + JSON.stringify(result));
           this.setState({
             suggestions: result
           });
 
         },
-        (error) =>{});
+        (error) => {
+        });
   };
 
   onSuggestionsClearRequested = () => {
@@ -182,7 +184,7 @@ class SearchComponent extends React.Component {
   };
 
   render() {
-    const { value, suggestions } = this.state;
+    const {value, suggestions} = this.state;
     const inputProps = {
       placeholder: "Поиск...",
       value,
@@ -199,9 +201,9 @@ class SearchComponent extends React.Component {
         renderSuggestion={renderSuggestion}
         renderSectionTitle={renderSectionTitle}
         getSectionSuggestions={getSectionSuggestions}
-        inputProps={inputProps} />
+        inputProps={inputProps}/>
     );
   }
 }
 
-export  default SearchComponent;
+export default SearchComponent;

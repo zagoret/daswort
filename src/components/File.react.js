@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import {Grid, StampCard} from "tabler-react";
 
 type Props = {|
@@ -18,10 +18,10 @@ class FileComponent extends React.Component {
   }
 
   componentDidMount() {
-  const fileId = this.props.match.params.fileId || "";
-  this.props.history.push(`/notes/${fileId}`);
-    fetch(`https://daswort-api.herokuapp.com/files/${fileId}`)
-    // fetch(`http://localhost:8080/files/${fileId}`)
+    const fileId = this.props.match.params.fileId || "";
+    this.props.history.push(`/notes/${fileId}`);
+    // fetch(`https://daswort-api.herokuapp.com/files/${fileId}`)
+    fetch(`http://localhost:8080/files/${fileId}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -47,28 +47,60 @@ class FileComponent extends React.Component {
     } else if (!isLoaded) {
       return <div>Загрузка...</div>;
     } else {
+
+      const breadcrumbItems = items.breadcrumbItems.map(item => {
+        let className = 'breadcrumb-item';
+
+        let pathItem;
+
+        if (item.isCurrent) {
+          className += ' active';
+          pathItem = item.name;
+        } else {
+          pathItem = <Link to={`/notes/${item.link}`} replace>{item.name}</Link>
+        }
+        return (<li className={className}>{pathItem}</li>)
+      });
       return (
+        <React.Fragment>
+          <nav aria-label="breadcrumb">
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item">
+                <a href="/notes">
+                  <Link to={`/notes`} replace>
+                    <i className="fas fa-home"></i>
+                  </Link>
+                </a>
+              </li>
+              {breadcrumbItems}
+            </ol>
+          </nav>
+          <Grid.Row cards={true}>
+            {items.fileList.map(item => (
+              <Grid.Col sm={6} lg={3} key={item.id}>
+                <StampCard
+                  color={item.webContentLink ? 'primary' : ''}
+                  icon={item.webContentLink ? 'file' : 'folder'}
+                  header={
+                    (item.webContentLink && (
+                        <a href={item.webContentLink}>
+                          <small>{item.name}</small>
+                        </a>
+                      ) ||
+                      <Link to={`/notes/${item.driveId}`} replace>
+                        <small>{item.name}</small>
+                      </Link>
+                    )
 
-        <Grid.Row cards={true}>
-          {items.map(item => (
-          <Grid.Col sm={6} lg={3} key={item.id}>
-            <StampCard
-              color={item.webContentLink ? 'primary' : ''}
-              icon={item.webContentLink ? 'file' : 'folder'}
-              header={
-                (item.webContentLink && (
-                    <a href={item.webContentLink}><small>{item.name}</small></a>
-                ) ||
-                  <Link to={`/notes/${item.driveId}`} replace><small>{item.name}</small></Link>
-                )
-
-              }
-            />
-          </Grid.Col>
-          ))}
-        </Grid.Row>
+                  }
+                />
+              </Grid.Col>
+            ))}
+          </Grid.Row>
+        </React.Fragment>
       );
     }
   }
 }
+
 export default withRouter(FileComponent);

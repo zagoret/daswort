@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import cn from "classnames";
-import {Grid, Nav, Form, Notification } from "tabler-react";
+import {Form, Grid, Nav, Notification} from "tabler-react";
 import Search from './Search.react';
 
 type subNavItem = {|
@@ -60,12 +60,13 @@ const SiteNav = ({
           <Grid.Row className="align-items-center">
             <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block">
               <a className="header-brand" href="#">
-                <img src="https://daswort-api.herokuapp.com/img/brand/brand.svg" className="header-brand-img ml-3" alt="Brand loc"
-                  style={{height:'2.3em'}}
+                <img src="https://daswort-api.herokuapp.com/img/brand/brand.svg" className="header-brand-img ml-3"
+                     alt="Brand loc"
+                     style={{height: '2.3em'}}
                 />
               </a>
             </Grid.Col>
-            <Grid.Col ignoreCol={true} lg={2}  md={2} sm={3} xs={6}>
+            <Grid.Col ignoreCol={true} lg={2} md={2} sm={3} xs={6}>
               <Nav
                 tabbed
                 className="border-0 d-flex"

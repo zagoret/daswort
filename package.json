@@ -7,11 +7,11 @@
     "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
-    "react": "^16.6.0",
+    "react": "^16.6.3",
     "react-autosuggest": "^9.4.2",
-    "react-dom": "^16.6.0",
+    "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.1",
     "tabler-react": "link:.."
   },
   "scripts": {
@@ -30,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0"
+  }
 }
