@@ -1,7 +1,7 @@
 {
   "main.css": "/daswort/static/css/main.8610adeb.chunk.css",
-  "main.js": "/daswort/static/js/main.a0dac009.chunk.js",
-  "main.js.map": "/daswort/static/js/main.a0dac009.chunk.js.map",
+  "main.js": "/daswort/static/js/main.aae53a71.chunk.js",
+  "main.js.map": "/daswort/static/js/main.aae53a71.chunk.js.map",
   "static/css/1.0800f83b.chunk.css": "/daswort/static/css/1.0800f83b.chunk.css",
   "static/js/1.f5ae0866.chunk.js": "/daswort/static/js/1.f5ae0866.chunk.js",
   "static/js/1.f5ae0866.chunk.js.map": "/daswort/static/js/1.f5ae0866.chunk.js.map",
@@ -12,6 +12,6 @@
   "static/css/main.8610adeb.chunk.css.map": "/daswort/static/css/main.8610adeb.chunk.css.map",
   "static/css/1.0800f83b.chunk.css.map": "/daswort/static/css/1.0800f83b.chunk.css.map",
   "index.html": "/daswort/index.html",
-  "precache-manifest.6a1ef12f67a721dc9ebaaefc49e4bab7.js": "/daswort/precache-manifest.6a1ef12f67a721dc9ebaaefc49e4bab7.js",
+  "precache-manifest.28c6347ef677ffefc5203b13149086f0.js": "/daswort/precache-manifest.28c6347ef677ffefc5203b13149086f0.js",
   "service-worker.js": "/daswort/service-worker.js"
 }
