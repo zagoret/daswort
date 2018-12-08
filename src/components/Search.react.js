@@ -48,8 +48,8 @@ class SearchComponent extends React.Component {
   };
 
   onSuggestionsFetchRequested = ({value}) => {
-    fetch(`http://localhost:8080/search/${value}`)
-    // fetch(`https://daswort-api.herokuapp.com/search/${value}`)
+    // fetch(`http://localhost:8080/search/${value}`)
+    fetch(`https://daswort-api.herokuapp.com/search/${value}`)
       .then(res => res.json())
       .then(
         (result) => {
