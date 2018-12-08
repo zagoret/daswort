@@ -99,11 +99,6 @@ class FileComponent extends React.Component {
               </Grid.Col>
             ))}
           </Grid.Row>
-          <Grid.Row cards={true}>
-            <Grid.Col sm={2} lg={2}>
-            <button type="button" className="btn btn-secondary">Download</button>
-            </Grid.Col>
-          </Grid.Row>
         </React.Fragment>
       );
     }
