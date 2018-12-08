@@ -69,6 +69,7 @@ class FileComponent extends React.Component {
                 <a href="/notes">
                   <Link to={`/notes`} replace>
                     <i className="fas fa-home"></i>
+                    &nbsp;Ноты
                   </Link>
                 </a>
               </li>
@@ -79,6 +80,7 @@ class FileComponent extends React.Component {
             {items.fileList.map(item => (
               <Grid.Col sm={6} lg={3} key={item.id}>
                 <StampCard
+                  className="file-wrapper"
                   color={item.webContentLink ? 'primary' : ''}
                   icon={item.webContentLink ? 'file' : 'folder'}
                   header={
@@ -96,6 +98,11 @@ class FileComponent extends React.Component {
                 />
               </Grid.Col>
             ))}
+          </Grid.Row>
+          <Grid.Row cards={true}>
+            <Grid.Col sm={2} lg={2}>
+            <button type="button" className="btn btn-secondary">Download</button>
+            </Grid.Col>
           </Grid.Row>
         </React.Fragment>
       );

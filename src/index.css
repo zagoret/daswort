@@ -100,3 +100,7 @@ span.react-autosuggest__item {
   top: -0.40em !important;
   right: -.2em !important;
 }
+
+.file-wrapper a:hover{
+  text-decoration: none;
+}
