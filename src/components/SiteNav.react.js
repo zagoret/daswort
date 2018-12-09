@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import cn from "classnames";
-import {Form, Grid, Nav, Notification} from "tabler-react";
+import {Form, Grid, Nav} from "tabler-react";
 import Search from './Search.react';
 
 type subNavItem = {|
@@ -81,27 +81,6 @@ const SiteNav = ({
               </Form.Group>
             </Grid.Col>
             <Grid.Col ignoreCol={true} width={1} className="d-none d-md-block d-xl-block offset-lg-1">
-              {/*<Notification.Tray*/}
-                {/*unread={true}*/}
-                {/*notificationsObjects={[*/}
-                  {/*{*/}
-                    {/*message: (*/}
-                      {/*<React.Fragment>*/}
-                        {/*Новые фотографии в альбоме "Рождество"*/}
-                      {/*</React.Fragment>*/}
-                    {/*),*/}
-                    {/*time: "2 часа назад",*/}
-                  {/*},*/}
-                  {/*{*/}
-                    {/*message: (*/}
-                      {/*<React.Fragment>*/}
-                        {/*Ноты для фортепиано*/}
-                      {/*</React.Fragment>*/}
-                    {/*),*/}
-                    {/*time: "3 дня назад",*/}
-                  {/*}*/}
-                {/*]}*/}
-              {/*/>*/}
             </Grid.Col>
           </Grid.Row>
         )}

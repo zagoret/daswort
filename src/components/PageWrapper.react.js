@@ -3,7 +3,7 @@
 import * as React from "react";
 import {NavLink, withRouter} from "react-router-dom";
 
-import {Grid, RouterContextProvider,} from "tabler-react";
+import {RouterContextProvider,} from "tabler-react";
 
 import SiteWrapper from "./SiteWrapper.react";
 
@@ -29,17 +29,11 @@ type navItem = {|
 
 const navBarItems: Array<navItem> = [
   {
-    value: "Ноты",
+    value: "Нотный архив",
     to: "/notes",
-    icon: "music",
-    initialValue: false,
+    // icon: "music",
+    initialValue: true,
     LinkComponent: withRouter(NavLink)
-  },
-  {
-    value: "Фото",
-    to: "/photos",
-    icon: "image",
-    LinkComponent: withRouter(NavLink),
   }
 ];
 
@@ -52,27 +46,7 @@ class PageWrapper extends React.Component<Props, void> {
     return (
       <SiteWrapper
         navProps={{itemsObjects: navBarItems, onMenuToggleClick: this.handleCollapseMobileMenu}}
-        routerContextComponentType={withRouter(RouterContextProvider)}
-        footerProps={{
-          copyright: (
-            <React.Fragment>
-              Copyright © 2018
-              {" "}
-              <a href=".">Das Wort</a>
-              {" "}
-              All rights reserved.
-            </React.Fragment>
-          ),
-          nav: (
-            <React.Fragment>
-              <Grid.Col auto={true}>
-              </Grid.Col>
-              <Grid.Col auto={true}>
-              </Grid.Col>
-            </React.Fragment>
-          ),
-        }}
-      >
+        routerContextComponentType={withRouter(RouterContextProvider)}>
         {this.props.children}
       </SiteWrapper>
     );

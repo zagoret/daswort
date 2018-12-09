@@ -10,9 +10,6 @@ import {Page} from "tabler-react";
 type Props = {||};
 
 const NotesPage = (props: Props) => {
-  console.log("Params:" + JSON.stringify(props.match.params));
-  const location = {pathname: `/notes/${props.match.params.fileId}`};
-  console.log(location);
   return (
     <PageWrapper>
       <Page.Content>

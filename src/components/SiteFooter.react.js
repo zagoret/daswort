@@ -41,7 +41,7 @@ const SiteFooter = ({links, note, copyright, nav}: Props): React.Node => (
       </div>
     )}
     {(nav || copyright) && (
-      <footer className="footer fixed-bottom">
+      <footer className="footer" style={{bottom: 0, position:'fixed', width: '100%'}}>
         <Container>
           <Grid.Row className="align-items-center flex-row-reverse">
             <Grid.Col auto={true} className="ml-auto">

@@ -62,7 +62,6 @@ class SearchComponent extends React.Component {
         });
   };
   onSuggestionSelected = (event, {suggestion}) => {
-    console.log(` Sa fie bine ${JSON.stringify(suggestion)}`);
     this.props.history.push(`/notes/${suggestion.parentId}`);
   };
 
