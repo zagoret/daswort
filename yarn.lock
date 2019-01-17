@@ -1830,7 +1830,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
 
@@ -6842,6 +6842,22 @@ react-content-loader@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/react-content-loader/-/react-content-loader-3.4.1.tgz#8eb273c630ffb36cb92f4383be811828eb8e1e66"
 
+react-contexify@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-contexify/-/react-contexify-4.0.1.tgz#154600f9a0cab6176e0d7f1900b76d0acf25ea8a"
+  integrity sha512-CKgx4B44Fx6Qgfy2Hz5UUNcbeLfzEJVWUDxIbUthzxX9MHLOkYE4G8PYdWGRL47oSyFi8Y4Ho+X+rXuW7U3QAQ==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+
+react-contextmenu@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/react-contextmenu/-/react-contextmenu-2.10.0.tgz#3a5338a552964db85c300072f719bc1f6b969838"
+  integrity sha512-neiZGpfxfYFjqbcIExi69qruqhB7l0LKEguHDXeizgyTGbJHTwbq1GplXCHIafUAkbGZH8FfD9PBeUcSRG78+Q==
+  dependencies:
+    classnames "^2.2.5"
+    object-assign "^4.1.0"
+
 react-dev-utils@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-6.1.1.tgz#a07e3e8923c4609d9f27e5af5207e3ca20724895"
@@ -7951,17 +7967,14 @@ table@^4.0.3:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-tabler-react@^1.21.2:
-  version "1.21.2"
-  resolved "https://registry.yarnpkg.com/tabler-react/-/tabler-react-1.21.2.tgz#1fd2c14c368003be623ead95e1f01424b80c0c66"
+tabler-react@1.27.0:
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/tabler-react/-/tabler-react-1.27.0.tgz#bb504d49aabe04b15398b3f9b98ddc8454a13691"
+  integrity sha512-XKLmlu0m1dvVd0gSoxHiMZQM6kiUhoFiSJyY1GXPpZL9j8Vol4FDPazwp5ZWmOBNxPemDIHyKIGdOVJ1BFHHuA==
   dependencies:
     classnames "^2.2.5"
     react-popper "^1.0.0-beta.6"
     react-text-mask "^5.4.1"
-
-"tabler-react@link:..":
-  version "0.0.0"
-  uid ""
 
 tapable@^1.0.0, tapable@^1.1.0:
   version "1.1.0"

@@ -10,10 +10,12 @@
     "react": "^16.6.3",
     "react-autosuggest": "^9.4.2",
     "react-content-loader": "^3.4.1",
+    "react-contexify": "^4.0.1",
+    "react-contextmenu": "^2.10.0",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.1",
-    "tabler-react": "link:.."
+    "tabler-react": "1.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
