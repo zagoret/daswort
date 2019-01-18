@@ -103,21 +103,6 @@ class FileComponent extends React.Component {
         return (<li className={className}>{pathItem}</li>)
       });
 
-      const toolbarMenu = items.fileList.slice(0, 1).map(item => (
-        <Button.List>
-          <Dropdown
-            type="button"
-            toggle
-            color="secondary"
-            icon="download"
-            items={[
-              <Dropdown.Item>Download</Dropdown.Item>
-            ]}
-          />
-        </Button.List>
-
-      ));
-
       const files = items.fileList.filter(file => file.mimeType !== "application/vnd.google-apps.folder")
         .map(file => (
           <React.Fragment>
@@ -155,28 +140,30 @@ class FileComponent extends React.Component {
       const folders = items.fileList.filter(file => file.mimeType === "application/vnd.google-apps.folder")
         .map(folder => (
           <Grid.Col sm={6} lg={3} key={folder.id}>
-            <StampCard
-              className="file-wrapper"
-              icon='folder'
-              header={
-                <Link to={`/notes/${folder.driveId}`} replace>
-                  <small>{folder.name}</small>
-                </Link>
-              }
-              footer={
+            <Card className="drive-folder">
+              <StampCard
+                className="file-wrapper"
+                icon='folder'
+                header={
+                  <Link to={`/notes/${folder.driveId}`} replace>
+                    <small>{folder.name}</small>
+                  </Link>
+                }>
+              </StampCard>
+              <Card.Footer>
                 <Dropdown
                   type="button"
                   className="download-folder"
                   color="secondary"
                   icon="download"
-                  itemsObject={[
-                    {
-                      value: "Herunterladen"
-                    }
-                  ]}
+                  items={<Dropdown.Item>
+                    <a href={`https://daswort-api.herokuapp.com/download/${folder.driveId}`}>
+                      Herunterladen
+                  </a>
+                  </Dropdown.Item>}
                 />
-              }>
-            </StampCard>
+              </Card.Footer>
+            </Card>
           </Grid.Col>
         ));
 
@@ -195,12 +182,7 @@ class FileComponent extends React.Component {
               {breadcrumbItems}
             </ol>
           </nav>
-          <Grid.Row cards={true} deck>
-            <Grid.Col>
-              {toolbarMenu}
-            </Grid.Col>
-          </Grid.Row>
-          <Grid.Row cards={true} deck>
+          <Grid.Row>
             {folders}
           </Grid.Row>
           <Grid.Row cards={true} deck>

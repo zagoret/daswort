@@ -115,3 +115,26 @@ span.react-autosuggest__item {
   box-shadow: none;
   color: #495057ba;
 }
+
+
+.card.drive-folder {
+  border: none;
+}
+
+.card.drive-folder .card-footer{
+  border: none;
+  padding: 0;
+}
+.card.drive-folder .card-footer .download-folder{
+  float: right;
+  color: #767779ba
+}
+.card.drive-folder .card.file-wrapper{
+  margin: 0;
+  border: none;
+  padding-bottom: 0 !important;
+}
+
+.drive-folder a.dropdown-item{
+  cursor: pointer;
+}
