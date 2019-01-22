@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/feather-webfont.b8e9cbc7.ttf"
   },
   {
-    "revision": "103c09848ef19d177790",
-    "url": "/daswort/static/css/main.e22bd3cb.chunk.css"
+    "revision": "7e873063583857fd7d6b",
+    "url": "/daswort/static/css/main.cf519b89.chunk.css"
   },
   {
     "revision": "d8ab6db91dc2db4b36c7b91bb1b4ebf6",
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/fa-regular-400.0c419713.svg"
   },
   {
-    "revision": "48f54f63d7711d0912a9a10205538fc4",
-    "url": "/daswort/static/media/fa-solid-900.48f54f63.ttf"
-  },
-  {
     "revision": "f29ad0031ad2c1c14b771ce504e2bfa7",
     "url": "/daswort/static/media/fa-solid-900.f29ad003.eot"
+  },
+  {
+    "revision": "48f54f63d7711d0912a9a10205538fc4",
+    "url": "/daswort/static/media/fa-solid-900.48f54f63.ttf"
   },
   {
     "revision": "42f9fd6acee87559ac0d6a33488db65e",
@@ -84,28 +84,28 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/android-browser.e1d3686c.svg"
   },
   {
-    "revision": "ead509aef9d7ac89dc55069b4c0acbfd",
-    "url": "/daswort/static/media/blackberry.ead509ae.svg"
-  },
-  {
-    "revision": "870087fd8e511c411e5baed4005d5bb7",
-    "url": "/daswort/static/media/chromium.870087fd.svg"
-  },
-  {
     "revision": "f2a4363b794cd6532749f37aafcf80b2",
     "url": "/daswort/static/media/aol-explorer.f2a4363b.svg"
   },
   {
-    "revision": "f66d5a061976c8b9bf6e852d9d1e2de7",
-    "url": "/daswort/static/media/dolphin.f66d5a06.svg"
+    "revision": "ead509aef9d7ac89dc55069b4c0acbfd",
+    "url": "/daswort/static/media/blackberry.ead509ae.svg"
   },
   {
     "revision": "2bbe801cebc095f84c7d92574ec7214d",
     "url": "/daswort/static/media/chrome.2bbe801c.svg"
   },
   {
+    "revision": "870087fd8e511c411e5baed4005d5bb7",
+    "url": "/daswort/static/media/chromium.870087fd.svg"
+  },
+  {
     "revision": "abda4ac163b5c9be7f993273f229b735",
     "url": "/daswort/static/media/edge.abda4ac1.svg"
+  },
+  {
+    "revision": "f66d5a061976c8b9bf6e852d9d1e2de7",
+    "url": "/daswort/static/media/dolphin.f66d5a06.svg"
   },
   {
     "revision": "57c3e539655a13da5d3207594f0b78ed",
@@ -116,12 +116,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/maxthon.df51f6f4.svg"
   },
   {
-    "revision": "438992de4e83d2123b1d9cdf8bb4bd03",
-    "url": "/daswort/static/media/opera.438992de.svg"
-  },
-  {
     "revision": "f64e67934b079414af1bf18158c582dd",
     "url": "/daswort/static/media/netscape.f64e6793.svg"
+  },
+  {
+    "revision": "438992de4e83d2123b1d9cdf8bb4bd03",
+    "url": "/daswort/static/media/opera.438992de.svg"
   },
   {
     "revision": "1751c6d6fbb09e086eaf46c3897268d7",
@@ -156,12 +156,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ao.fd948d03.svg"
   },
   {
-    "revision": "2ed2ee2a0b02519ffee732e3d9d6f9fb",
-    "url": "/daswort/static/media/ar.2ed2ee2a.svg"
-  },
-  {
     "revision": "fb98f0e65ec013a1920944ecc3826df3",
     "url": "/daswort/static/media/aq.fb98f0e6.svg"
+  },
+  {
+    "revision": "2ed2ee2a0b02519ffee732e3d9d6f9fb",
+    "url": "/daswort/static/media/ar.2ed2ee2a.svg"
   },
   {
     "revision": "511e196f2b286fc220c83221b3bb8a01",
@@ -176,16 +176,16 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ax.3301f616.svg"
   },
   {
+    "revision": "ba2d1e5e6f743781569d6b671077db3c",
+    "url": "/daswort/static/media/az.ba2d1e5e.svg"
+  },
+  {
     "revision": "a441d8da7d266c9b9d315d06ee5fb429",
     "url": "/daswort/static/media/ba.a441d8da.svg"
   },
   {
     "revision": "c568edd5a2552c5cd6ce15009b8df3e2",
     "url": "/daswort/static/media/bb.c568edd5.svg"
-  },
-  {
-    "revision": "ba2d1e5e6f743781569d6b671077db3c",
-    "url": "/daswort/static/media/az.ba2d1e5e.svg"
   },
   {
     "revision": "b12e306073e83e7fec9d4b20e676b759",
@@ -208,12 +208,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/bh.805f2682.svg"
   },
   {
-    "revision": "ea52986c752328b2ca8ce558cab8a98f",
-    "url": "/daswort/static/media/bj.ea52986c.svg"
-  },
-  {
     "revision": "bc8085f9a17e392f05c127dc50293578",
     "url": "/daswort/static/media/bi.bc8085f9.svg"
+  },
+  {
+    "revision": "ea52986c752328b2ca8ce558cab8a98f",
+    "url": "/daswort/static/media/bj.ea52986c.svg"
   },
   {
     "revision": "a5c508b2ab0cdb85d5f22d40d2c3b97b",
@@ -276,12 +276,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/cm.17f2e2c9.svg"
   },
   {
-    "revision": "433d22ad5949ca9376e7fee2398cf908",
-    "url": "/daswort/static/media/co.433d22ad.svg"
-  },
-  {
     "revision": "c2814ac0b9d72075571409689b113eb9",
     "url": "/daswort/static/media/cn.c2814ac0.svg"
+  },
+  {
+    "revision": "433d22ad5949ca9376e7fee2398cf908",
+    "url": "/daswort/static/media/co.433d22ad.svg"
   },
   {
     "revision": "20a9e6bf3919e282db3bf53d0e7820e2",
@@ -308,12 +308,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/cz.6731f872.svg"
   },
   {
-    "revision": "01e89f77d4cd293951a32164b25ced60",
-    "url": "/daswort/static/media/de.01e89f77.svg"
-  },
-  {
     "revision": "f4c086cc100130afc0642dc7bf1357de",
     "url": "/daswort/static/media/dj.f4c086cc.svg"
+  },
+  {
+    "revision": "01e89f77d4cd293951a32164b25ced60",
+    "url": "/daswort/static/media/de.01e89f77.svg"
   },
   {
     "revision": "44761537674d28555c1985159c2b2e88",
@@ -348,12 +348,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/fi.58bcc4af.svg"
   },
   {
-    "revision": "dc9ed815f9a4bc59036c5fb3ef3aecca",
-    "url": "/daswort/static/media/fo.dc9ed815.svg"
-  },
-  {
     "revision": "2bd7d4dffe1fd474663f05041e95e46a",
     "url": "/daswort/static/media/fm.2bd7d4df.svg"
+  },
+  {
+    "revision": "dc9ed815f9a4bc59036c5fb3ef3aecca",
+    "url": "/daswort/static/media/fo.dc9ed815.svg"
   },
   {
     "revision": "a178bcfbbbc26cb995fa19241b7a12a2",
@@ -436,12 +436,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/gb-nir.943d406a.svg"
   },
   {
-    "revision": "b1ddba6040fc69b7d37591ffb7012787",
-    "url": "/daswort/static/media/fj.b1ddba60.svg"
-  },
-  {
     "revision": "5c64395d99f225e9c106c55c4c06ee69",
     "url": "/daswort/static/media/fk.5c64395d.svg"
+  },
+  {
+    "revision": "b1ddba6040fc69b7d37591ffb7012787",
+    "url": "/daswort/static/media/fj.b1ddba60.svg"
   },
   {
     "revision": "30f99f820aca3d60dd8ecf3d5ee75764",
@@ -452,24 +452,28 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ai.928b5a4f.svg"
   },
   {
-    "revision": "5f3974a30d3ead800491befb7af540a8",
-    "url": "/daswort/static/media/westernunion-dark.5f3974a3.svg"
-  },
-  {
     "revision": "4082e1b1ac8f311463c064a0875a8e5a",
     "url": "/daswort/static/media/westernunion.4082e1b1.svg"
+  },
+  {
+    "revision": "5f3974a30d3ead800491befb7af540a8",
+    "url": "/daswort/static/media/westernunion-dark.5f3974a3.svg"
   },
   {
     "revision": "c77724f331e1053188a5aa0d796ffc3b",
     "url": "/daswort/static/media/webmoney.c77724f3.svg"
   },
   {
-    "revision": "a09152e75acbfee13fe82e13c54a77ad",
-    "url": "/daswort/static/media/visa.a09152e7.svg"
+    "revision": "5c559c4c11d8fda02a9f9e86e1615b41",
+    "url": "/daswort/static/media/webmoney-dark.5c559c4c.svg"
   },
   {
     "revision": "f6a55e1d4fc96499269717a964bc3984",
     "url": "/daswort/static/media/visa-dark.f6a55e1d.svg"
+  },
+  {
+    "revision": "a09152e75acbfee13fe82e13c54a77ad",
+    "url": "/daswort/static/media/visa.a09152e7.svg"
   },
   {
     "revision": "012caff4df8cce6f2ea751366a4d0804",
@@ -624,10 +628,6 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ingenico-dark.5bef3895.svg"
   },
   {
-    "revision": "5c559c4c11d8fda02a9f9e86e1615b41",
-    "url": "/daswort/static/media/webmoney-dark.5c559c4c.svg"
-  },
-  {
     "revision": "7337d9d063907f6fd8d49214982e18a6",
     "url": "/daswort/static/media/giropay.7337d9d0.svg"
   },
@@ -652,14 +652,6 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/worldpay.d63620a3.svg"
   },
   {
-    "revision": "36f577700982f8fb3542d92a6c362650",
-    "url": "/daswort/static/media/dwolla.36f57770.svg"
-  },
-  {
-    "revision": "285de38e64669e7d6fdb6b88092a7adb",
-    "url": "/daswort/static/media/unionpay.285de38e.svg"
-  },
-  {
     "revision": "22beb1a2dc02dd5b8ecd72b776937af0",
     "url": "/daswort/static/media/unionpay-dark.22beb1a2.svg"
   },
@@ -674,6 +666,10 @@ self.__precacheManifest = [
   {
     "revision": "2a87d23fcf628021ed81203dc2305938",
     "url": "/daswort/static/media/shopify.2a87d23f.svg"
+  },
+  {
+    "revision": "937412fda731ef86a0a3658eb6b1044f",
+    "url": "/daswort/static/media/shopify-dark.937412fd.svg"
   },
   {
     "revision": "44f32f32a552d578ccb68df55740c84b",
@@ -720,8 +716,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/googlewallet.7f0e39ad.svg"
   },
   {
-    "revision": "937412fda731ef86a0a3658eb6b1044f",
-    "url": "/daswort/static/media/shopify-dark.937412fd.svg"
+    "revision": "285de38e64669e7d6fdb6b88092a7adb",
+    "url": "/daswort/static/media/unionpay.285de38e.svg"
+  },
+  {
+    "revision": "36f577700982f8fb3542d92a6c362650",
+    "url": "/daswort/static/media/dwolla.36f57770.svg"
   },
   {
     "revision": "7cbe03bef872c536d6dbaa1f274ae0dc",
@@ -760,12 +760,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/verisign-dark.1f0c2c56.svg"
   },
   {
-    "revision": "b1695f2bf43376465adea7252ec7837f",
-    "url": "/daswort/static/media/mastercard-dark.b1695f2b.svg"
-  },
-  {
     "revision": "a6684d9315e2ded55b8ee33df8c370d5",
     "url": "/daswort/static/media/mastercard.a6684d93.svg"
+  },
+  {
+    "revision": "b1695f2bf43376465adea7252ec7837f",
+    "url": "/daswort/static/media/mastercard-dark.b1695f2b.svg"
   },
   {
     "revision": "00f5c21f4be89a46de82c69e6259781c",
@@ -804,16 +804,16 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/feather-webfont.cc5143b2.eot"
   },
   {
-    "revision": "f7d38984e9cfaa1bf3f98a0046862667",
-    "url": "/daswort/static/media/clickandbuy-dark.f7d38984.svg"
-  },
-  {
     "revision": "983db5f2256f8e24e520ef7d1146ed3f",
     "url": "/daswort/static/media/cirrus.983db5f2.svg"
   },
   {
-    "revision": "103c09848ef19d177790",
-    "url": "/daswort/static/js/main.103c0984.chunk.js"
+    "revision": "f7d38984e9cfaa1bf3f98a0046862667",
+    "url": "/daswort/static/media/clickandbuy-dark.f7d38984.svg"
+  },
+  {
+    "revision": "7e873063583857fd7d6b",
+    "url": "/daswort/static/js/main.7e873063.chunk.js"
   },
   {
     "revision": "1ff3d3f0d176196bbd3aaf4a6ecf7dac",
@@ -848,8 +848,8 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/zm.62586634.svg"
   },
   {
-    "revision": "a2dc66505c31b7096ba48bac4557855c",
-    "url": "/daswort/static/media/yt.a2dc6650.svg"
+    "revision": "d8ffed672eb363336a1ad1ad4dc965be",
+    "url": "/daswort/static/media/za.d8ffed67.svg"
   },
   {
     "revision": "55897575e3e0001ebfb8dcfba390495d",
@@ -860,24 +860,16 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ws.23b64335.svg"
   },
   {
-    "revision": "d8ffed672eb363336a1ad1ad4dc965be",
-    "url": "/daswort/static/media/za.d8ffed67.svg"
-  },
-  {
     "revision": "4b4f5462b60b559d729a55f8719cf005",
     "url": "/daswort/static/media/wf.4b4f5462.svg"
-  },
-  {
-    "revision": "9a6c3abc25acb7444923135ab30b7cb9",
-    "url": "/daswort/static/media/vu.9a6c3abc.svg"
   },
   {
     "revision": "0b7571b87f2faaa3d8e3b5662636d574",
     "url": "/daswort/static/media/vn.0b7571b8.svg"
   },
   {
-    "revision": "6f48a1b9488fe66e13887fb43304c009",
-    "url": "/daswort/static/media/ve.6f48a1b9.svg"
+    "revision": "9a6c3abc25acb7444923135ab30b7cb9",
+    "url": "/daswort/static/media/vu.9a6c3abc.svg"
   },
   {
     "revision": "f3912357d0a5339a1f402efefc89a8e7",
@@ -886,6 +878,10 @@ self.__precacheManifest = [
   {
     "revision": "791dfbdae7960b7482e949dfac7c829a",
     "url": "/daswort/static/media/uz.791dfbda.svg"
+  },
+  {
+    "revision": "6f48a1b9488fe66e13887fb43304c009",
+    "url": "/daswort/static/media/ve.6f48a1b9.svg"
   },
   {
     "revision": "a7e91b404efc4ad91c1360efd8e9cb4a",
@@ -916,20 +912,24 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/tw.7baefd1c.svg"
   },
   {
+    "revision": "1a077ad0ee7788a6a1688dbfc5c12526",
+    "url": "/daswort/static/media/tv.1a077ad0.svg"
+  },
+  {
     "revision": "f09daa6dc55999ef79edf7d708ad1f90",
     "url": "/daswort/static/media/tt.f09daa6d.svg"
   },
   {
-    "revision": "1a077ad0ee7788a6a1688dbfc5c12526",
-    "url": "/daswort/static/media/tv.1a077ad0.svg"
+    "revision": "fa884203b4e844943f89c290c02ea246",
+    "url": "/daswort/static/media/to.fa884203.svg"
   },
   {
     "revision": "aabe02c21bdc96b4499f10c7ead37008",
     "url": "/daswort/static/media/tr.aabe02c2.svg"
   },
   {
-    "revision": "fa884203b4e844943f89c290c02ea246",
-    "url": "/daswort/static/media/to.fa884203.svg"
+    "revision": "a2dc66505c31b7096ba48bac4557855c",
+    "url": "/daswort/static/media/yt.a2dc6650.svg"
   },
   {
     "revision": "ef273685b23f3978caf97e7fb0b2ea9d",
@@ -944,8 +944,8 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/tk.22d4831b.svg"
   },
   {
-    "revision": "243a362ebddb29c473ace764e5b11e6b",
-    "url": "/daswort/static/media/cirrus-dark.243a362e.svg"
+    "revision": "b6533ad31f2b20a30bba38b0f2de1d9b",
+    "url": "/daswort/static/media/tj.b6533ad3.svg"
   },
   {
     "revision": "502695871e6c9632d23ed1db99f4e102",
@@ -960,12 +960,8 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/bitpay-dark.f86a15da.svg"
   },
   {
-    "revision": "b6533ad31f2b20a30bba38b0f2de1d9b",
-    "url": "/daswort/static/media/tj.b6533ad3.svg"
-  },
-  {
-    "revision": "b96ee5428e8c67d6b1fc8bf73925af34",
-    "url": "/daswort/static/media/tg.b96ee542.svg"
+    "revision": "243a362ebddb29c473ace764e5b11e6b",
+    "url": "/daswort/static/media/cirrus-dark.243a362e.svg"
   },
   {
     "revision": "8c0a0fa2bc07c9102ff49218b0ca9145",
@@ -976,8 +972,8 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/bancontact-dark.6e786090.svg"
   },
   {
-    "revision": "079a252552085195fa1e74c55965d960",
-    "url": "/daswort/static/media/td.079a2525.svg"
+    "revision": "b96ee5428e8c67d6b1fc8bf73925af34",
+    "url": "/daswort/static/media/tg.b96ee542.svg"
   },
   {
     "revision": "adc24fb28bb1688520b8ee3272929644",
@@ -988,12 +984,16 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/americanexpress.b89abdaf.svg"
   },
   {
-    "revision": "c2ea2d77ce452a928487e9d62737ad4c",
-    "url": "/daswort/static/media/americanexpress-dark.c2ea2d77.svg"
+    "revision": "079a252552085195fa1e74c55965d960",
+    "url": "/daswort/static/media/td.079a2525.svg"
   },
   {
     "revision": "5c500045ab6cd762cd5f9abd393c2577",
     "url": "/daswort/static/media/amazon.5c500045.svg"
+  },
+  {
+    "revision": "c2ea2d77ce452a928487e9d62737ad4c",
+    "url": "/daswort/static/media/americanexpress-dark.c2ea2d77.svg"
   },
   {
     "revision": "b178a57fcddb6156a5ec639d1b5d5a24",
@@ -1004,20 +1004,20 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/sy.0fedea07.svg"
   },
   {
-    "revision": "230410b519c6205157002ce21ff8d629",
-    "url": "/daswort/static/media/st.230410b5.svg"
-  },
-  {
     "revision": "0c7c9ffcd96a318fe1ed195441a6c2a9",
     "url": "/daswort/static/media/ss.0c7c9ffc.svg"
   },
   {
-    "revision": "65cdb1de480732b66f6a3675f49f2596",
-    "url": "/daswort/static/media/sr.65cdb1de.svg"
+    "revision": "230410b519c6205157002ce21ff8d629",
+    "url": "/daswort/static/media/st.230410b5.svg"
   },
   {
     "revision": "b3c0a20f217b35d1cf1111736130dac8",
     "url": "/daswort/static/media/vi.b3c0a20f.svg"
+  },
+  {
+    "revision": "65cdb1de480732b66f6a3675f49f2596",
+    "url": "/daswort/static/media/sr.65cdb1de.svg"
   },
   {
     "revision": "3bdb1de25c626c766b62e2c1cca11ea9",
@@ -1032,12 +1032,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/sl.835d44f6.svg"
   },
   {
-    "revision": "8331157c241082c3ad0f499b47737ac2",
-    "url": "/daswort/static/media/sj.8331157c.svg"
-  },
-  {
     "revision": "f44daf851804e866328d76cdd0b99074",
     "url": "/daswort/static/media/sk.f44daf85.svg"
+  },
+  {
+    "revision": "8331157c241082c3ad0f499b47737ac2",
+    "url": "/daswort/static/media/sj.8331157c.svg"
   },
   {
     "revision": "72f83c2946a14767d764c53baca31a7b",
@@ -1108,12 +1108,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/tc.2f7d308e.svg"
   },
   {
-    "revision": "d23d18072122ea995d7f4f4bea2300fe",
-    "url": "/daswort/static/media/sx.d23d1807.svg"
-  },
-  {
     "revision": "20a4d7413504b137c05f202bbf385e9b",
     "url": "/daswort/static/media/qa.20a4d741.svg"
+  },
+  {
+    "revision": "d23d18072122ea995d7f4f4bea2300fe",
+    "url": "/daswort/static/media/sx.d23d1807.svg"
   },
   {
     "revision": "1519b6c631d063c9e495cd9f3dfd0f66",
@@ -1164,24 +1164,24 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/py.abc5b396.svg"
   },
   {
-    "revision": "0726abdb26a803057f8e22205c03f172",
-    "url": "/daswort/static/media/sh.0726abdb.svg"
+    "revision": "2257cff690948088abf92a799e89544e",
+    "url": "/daswort/static/media/pl.2257cff6.svg"
   },
   {
     "revision": "db891066a9bf98fd99cfa111abe7d535",
     "url": "/daswort/static/media/pk.db891066.svg"
   },
   {
-    "revision": "2257cff690948088abf92a799e89544e",
-    "url": "/daswort/static/media/pl.2257cff6.svg"
-  },
-  {
-    "revision": "8b5fbe69f9da3819f4887f6a01b8648e",
-    "url": "/daswort/static/media/ph.8b5fbe69.svg"
+    "revision": "0726abdb26a803057f8e22205c03f172",
+    "url": "/daswort/static/media/sh.0726abdb.svg"
   },
   {
     "revision": "bf813bfe31876e1a07e61f7ecdafd5a6",
     "url": "/daswort/static/media/pn.bf813bfe.svg"
+  },
+  {
+    "revision": "8b5fbe69f9da3819f4887f6a01b8648e",
+    "url": "/daswort/static/media/ph.8b5fbe69.svg"
   },
   {
     "revision": "e444f903a3056c776d7eb977380fa0c6",
@@ -1232,12 +1232,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ne.bad21adc.svg"
   },
   {
-    "revision": "a2dc66505c31b7096ba48bac4557855c",
-    "url": "/daswort/static/media/nc.a2dc6650.svg"
-  },
-  {
     "revision": "f38aead1dd402abc43b2e0dddd08ae47",
     "url": "/daswort/static/media/na.f38aead1.svg"
+  },
+  {
+    "revision": "a2dc66505c31b7096ba48bac4557855c",
+    "url": "/daswort/static/media/nc.a2dc6650.svg"
   },
   {
     "revision": "cd1e97af5e343e6d7db5c8f8bbb40cac",
@@ -1272,12 +1272,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/mo.36f1d6f2.svg"
   },
   {
-    "revision": "cfd48e450bb31f3dc56b78fdac465bc0",
-    "url": "/daswort/static/media/mn.cfd48e45.svg"
-  },
-  {
     "revision": "e02afe0476bb357aebde18136fda06e0",
     "url": "/daswort/static/media/bo.e02afe04.svg"
+  },
+  {
+    "revision": "cfd48e450bb31f3dc56b78fdac465bc0",
+    "url": "/daswort/static/media/mn.cfd48e45.svg"
   },
   {
     "revision": "e6d7c5a4187b1fd8ab643d0e5d2f5bd1",
@@ -1288,12 +1288,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ml.be076fd9.svg"
   },
   {
-    "revision": "a3bb001b15d05e4a8974729fa75f9247",
-    "url": "/daswort/static/media/mh.a3bb001b.svg"
-  },
-  {
     "revision": "29cb0cb257ce61901ab1d97c97200be9",
     "url": "/daswort/static/media/mk.29cb0cb2.svg"
+  },
+  {
+    "revision": "a3bb001b15d05e4a8974729fa75f9247",
+    "url": "/daswort/static/media/mh.a3bb001b.svg"
   },
   {
     "revision": "0c0da5f0631b226d95fd57929b9e4b4b",
@@ -1316,12 +1316,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/ly.ededce32.svg"
   },
   {
-    "revision": "83353fa9cde68c8e128f85724e743e75",
-    "url": "/daswort/static/media/lv.83353fa9.svg"
-  },
-  {
     "revision": "06956a1377123bf7bf98076217a07361",
     "url": "/daswort/static/media/lu.06956a13.svg"
+  },
+  {
+    "revision": "83353fa9cde68c8e128f85724e743e75",
+    "url": "/daswort/static/media/lv.83353fa9.svg"
   },
   {
     "revision": "14b63eab7de31bd29ffcdc4002433cd6",
@@ -1336,16 +1336,16 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/lr.5485e606.svg"
   },
   {
-    "revision": "6c2940dae95d15b98cf38bcf44816d21",
-    "url": "/daswort/static/media/lc.6c2940da.svg"
-  },
-  {
     "revision": "fc2d0f07ea618d781e800bd8cd49d92c",
     "url": "/daswort/static/media/nf.fc2d0f07.svg"
   },
   {
     "revision": "4981974031355cb8cb9fa6ae351ec6cf",
     "url": "/daswort/static/media/lb.49819740.svg"
+  },
+  {
+    "revision": "6c2940dae95d15b98cf38bcf44816d21",
+    "url": "/daswort/static/media/lc.6c2940da.svg"
   },
   {
     "revision": "bdfc4ab5e964e3466fcf31b5ec4bf87b",
@@ -1376,12 +1376,12 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/kn.7ab9462c.svg"
   },
   {
-    "revision": "cd351374021fde2537ae578691612f30",
-    "url": "/daswort/static/media/km.cd351374.svg"
-  },
-  {
     "revision": "fbe824dcd1ef2519d2d21f189a345c2a",
     "url": "/daswort/static/media/ki.fbe824dc.svg"
+  },
+  {
+    "revision": "cd351374021fde2537ae578691612f30",
+    "url": "/daswort/static/media/km.cd351374.svg"
   },
   {
     "revision": "de33c0489053970bffc24559744aaae3",
@@ -1394,10 +1394,6 @@ self.__precacheManifest = [
   {
     "revision": "fd2646810e3b7a16d5ff0e16401fcf94",
     "url": "/daswort/static/media/jp.fd264681.svg"
-  },
-  {
-    "revision": "f9aceffb03e9764fac60e5aafe3743ec",
-    "url": "/daswort/static/media/md.f9aceffb.svg"
   },
   {
     "revision": "d14059401101d457efe14ba2495e69c6",
@@ -1416,20 +1412,24 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/it.bd6b5ff3.svg"
   },
   {
+    "revision": "f9aceffb03e9764fac60e5aafe3743ec",
+    "url": "/daswort/static/media/md.f9aceffb.svg"
+  },
+  {
     "revision": "10e0d5b28508b7a92f02b01c8f54bfe7",
     "url": "/daswort/static/media/li.10e0d5b2.svg"
   },
   {
-    "revision": "f9bf701dcacbc6a9e40cc626153d6ff9",
-    "url": "/daswort/static/media/jcb-dark.f9bf701d.svg"
+    "revision": "ec1fb8765fe74b0912ab152afe850c38",
+    "url": "/daswort/static/media/is.ec1fb876.svg"
   },
   {
     "revision": "2646bc518e3540d4639365448d02b23d",
     "url": "/daswort/static/media/jcb.2646bc51.svg"
   },
   {
-    "revision": "ec1fb8765fe74b0912ab152afe850c38",
-    "url": "/daswort/static/media/is.ec1fb876.svg"
+    "revision": "f9bf701dcacbc6a9e40cc626153d6ff9",
+    "url": "/daswort/static/media/jcb-dark.f9bf701d.svg"
   },
   {
     "revision": "bfffb443939dc4de9a1926380b3c99b4",
@@ -1456,20 +1456,20 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/il.0ea7e9da.svg"
   },
   {
-    "revision": "2b983496dce81d0805a0d92443e8000c",
-    "url": "/daswort/static/media/ni.2b983496.svg"
-  },
-  {
     "revision": "d609c4e7bbb267cc920b9bfacdf8c553",
     "url": "/daswort/static/media/ie.d609c4e7.svg"
   },
   {
-    "revision": "529db212e9de897dc2dd42f4ad7f8fd3",
-    "url": "/daswort/static/media/kz.529db212.svg"
+    "revision": "2b983496dce81d0805a0d92443e8000c",
+    "url": "/daswort/static/media/ni.2b983496.svg"
   },
   {
     "revision": "ee020a0f5bc9d6586b97f9a9dfea47a0",
     "url": "/daswort/static/media/id.ee020a0f.svg"
+  },
+  {
+    "revision": "529db212e9de897dc2dd42f4ad7f8fd3",
+    "url": "/daswort/static/media/kz.529db212.svg"
   },
   {
     "revision": "a8abaf3779c44dbb5d3604b621d899fc",
@@ -1552,10 +1552,6 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/gm.9423800e.svg"
   },
   {
-    "revision": "d4b35e14b2cdd6bb630a7b2c8902d7b7",
-    "url": "/daswort/static/media/gh.d4b35e14.svg"
-  },
-  {
     "revision": "d02c42ea2b63c1131bb36da347ac3490",
     "url": "/daswort/static/media/gl.d02c42ea.svg"
   },
@@ -1564,16 +1560,20 @@ self.__precacheManifest = [
     "url": "/daswort/static/media/gi.c9543d40.svg"
   },
   {
-    "revision": "d339aeb27fefd04b3c8238b7d8f26473",
-    "url": "/daswort/static/media/gg.d339aeb2.svg"
+    "revision": "d4b35e14b2cdd6bb630a7b2c8902d7b7",
+    "url": "/daswort/static/media/gh.d4b35e14.svg"
+  },
+  {
+    "revision": "4ea8e1590ad37f3d4fb8c58c7906a73c",
+    "url": "/daswort/static/media/gf.4ea8e159.svg"
   },
   {
     "revision": "334a8275142fd63934abf3a8f8c5a913",
     "url": "/daswort/static/media/ge.334a8275.svg"
   },
   {
-    "revision": "4ea8e1590ad37f3d4fb8c58c7906a73c",
-    "url": "/daswort/static/media/gf.4ea8e159.svg"
+    "revision": "d339aeb27fefd04b3c8238b7d8f26473",
+    "url": "/daswort/static/media/gg.d339aeb2.svg"
   },
   {
     "revision": "c17d779e8552e59c9ef032f0a432fcfb",
@@ -1620,7 +1620,7 @@ self.__precacheManifest = [
     "url": "/daswort/static/css/1.03acec6d.chunk.css"
   },
   {
-    "revision": "39088341098b065ccbe7357af2819f1d",
+    "revision": "64c0bb25604d8c7af6e38f692fbf44a3",
     "url": "/daswort/index.html"
   }
 ];
