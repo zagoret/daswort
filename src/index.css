@@ -138,3 +138,7 @@ span.react-autosuggest__item {
 .drive-folder a.dropdown-item{
   cursor: pointer;
 }
+
+.footer-container {
+  float: right;
+}
