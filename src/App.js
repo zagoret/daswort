@@ -1,5 +1,5 @@
 import * as React from "react";
-import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import {HashRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 
 import NotesPage from "./NotesPage.react";
 import PhotosPage from "./PhotosPage.react";
