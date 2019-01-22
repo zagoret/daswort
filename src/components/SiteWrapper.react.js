@@ -2,7 +2,7 @@
 
 import * as React from "react";
 
-import {Page, Site} from "tabler-react";
+import {Container, Grid, Page, Site} from "tabler-react";
 import type {Props as SiteNavProps} from "./SiteNav.react";
 import SiteNav from "./SiteNav.react";
 import type {Props as SiteFooterProps} from "./SiteFooter.react";
@@ -60,7 +60,26 @@ class SiteWrapper extends React.PureComponent<Props, State> {
           {nav}
           {children}
         </Page.Main>
-        {footer}
+        <footer className="footer" style={{bottom: 0, position:'fixed', width: '100%', fontSize: '11px'}}>
+          <Container>
+            <Grid.Row className="align-items-center flex-row-reverse">
+              <Grid.Col width={12} lgAuto className="mt-3 mt-lg-0 text-center">
+                Alle Rechte vorbehalten. Das hier veröffentlichte Notenmaterial ist urheberrechtlich geschützt.
+              </Grid.Col>
+            </Grid.Row>
+            <Grid.Row className="align-items-center flex-row-reverse">
+              <Grid.Col width={12} lgAuto className="mt-3 mt-lg-0 text-center">
+                Die Originale dürfen nur mit Erlaubnis der jeweiligen Rechtsinhaber kopiert,
+                nachgedruckt, vervielfältigt oder aufgenommen werden. Diese Notensammlung ist gem.
+              </Grid.Col>
+            </Grid.Row>
+            <Grid.Row className="align-items-center flex-row-reverse">
+              <Grid.Col width={12} lgAuto className="mt-3 mt-lg-0 text-center">
+                § 46 UrhG ausschließlich für den Kirchen- und Unterrichtsgebrauch in den Gemeinden der EvangeliumsChristen-Baptisten bestimmt.
+              </Grid.Col>
+            </Grid.Row>
+          </Container>
+        </footer>
       </Page>
     );
   }
