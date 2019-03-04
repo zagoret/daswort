@@ -73,7 +73,7 @@ class SearchComponent extends React.Component {
   render() {
     const {value, suggestions} = this.state;
     const inputProps = {
-      placeholder: "Поиск...",
+      placeholder: "Suche...",
       value,
       onChange: this.onChange
     };

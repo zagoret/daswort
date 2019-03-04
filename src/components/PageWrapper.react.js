@@ -29,7 +29,7 @@ type navItem = {|
 
 const navBarItems: Array<navItem> = [
   {
-    value: "Нотный архив",
+    value: "Notenarchiv",
     to: "/notes",
     // icon: "music",
     initialValue: true,

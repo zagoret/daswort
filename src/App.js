@@ -8,9 +8,8 @@ import "@fortawesome/fontawesome-free/css/all.css"
 
 import "tabler-react/dist/Tabler.css";
 
-type Props = {||};
 
-function App(props: Props): React.Node {
+function App() {
 
   return (
     <React.StrictMode>
@@ -20,6 +19,7 @@ function App(props: Props): React.Node {
           <Route exact path="/notes/" component={NotesPage}/>
           <Route exact path="/notes/:fileId" component={NotesPage}/>
           <Route exact path="/photos" component={PhotosPage}/>
+          <Route exact path="/photos/:fileId" component={PhotosPage}/>
         </Switch>
       </Router>
     </React.StrictMode>

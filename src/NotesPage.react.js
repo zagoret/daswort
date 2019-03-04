@@ -7,9 +7,7 @@ import PageWrapper from "./components/PageWrapper.react";
 import FileComponent from "./components/File.react";
 import {Page} from "tabler-react";
 
-type Props = {||};
-
-const NotesPage = (props: Props) => {
+const NotesPage = (props) => {
   return (
     <PageWrapper>
       <Page.Content>
